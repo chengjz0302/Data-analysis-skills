@@ -1,0 +1,235 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Analysis of the heart weights of cats},
+  pdfauthor={Student Number: 2516212c},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Analysis of the heart weights of cats}
+\author{Student Number: 2516212c}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{sec:Intro}{%
+\section{Introduction}\label{sec:Intro}}
+
+In the sport of rugby there are many different positions a player could
+play but, in general, players are classified into one of two playing
+positions, namely ??forwards?? and ??backs??. From the data collected on
+rugby players from the 2015 Men??s Rugby World Cup, we want to figure
+out the relationship between position and heights. 89 rugby players were
+used in the research and they each had their own position and heights(in
+cm). This data is analysed in this report.
+
+\hypertarget{sec:EDA}{%
+\section{Exploratory Data Analysis}\label{sec:EDA}}
+
+Summary statistics of the heights of the rugby players are presented in
+the following table for each kind of position separately.
+
+\begin{table}[!h]
+
+\caption{\label{tab:summarises}\label{tab:summaries} Summary statistics on
+height(in cm) by position of 89 rugby players.}
+\centering
+\begin{tabular}[t]{l|r|r|r|r|r|r|r|r}
+\hline
+position & n & Mean & St.Dev & Min & Q1 & Median & Q3 & Max\\
+\hline
+Back & 33 & 183 & 4.4 & 173 & 180 & 183 & 185 & 193\\
+\hline
+Forward & 56 & 181 & 3.6 & 173 & 180 & 181 & 183 & 190\\
+\hline
+\end{tabular}
+\end{table}
+
+This table shows that there were almost twice as many rugby players in
+the sample (56 compared to 33) and that the summarises of the heights of
+the rugby players which position is `Back' seem has no remarkable
+difference with these rugby players who played `Forward'. But from the
+median, the summarises of `Back' was greater than `Forward' although the
+difference was not large. For example the maximum of `Back' was taller
+than the maximum of `Forward' 3 cm and from the Standard deviation, we
+could see that the spread of `Back' seems widely than the spread of
+`Forward'. These differences can be seen directly in the following
+boxplots which summarise the distribution of the heights of each kind of
+players.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.68\linewidth]{xxx_files/figure-latex/boxplot1-1} 
+
+}
+
+\caption{\label{fig:box} Heights by Position}\label{fig:boxplot1}
+\end{figure}
+
+The boxplot shows that the rugby players' heights of `Back' is larger
+than `Forward', in general, compared to the players' heights of
+`Forward' and that the players' heights of `Back' were more widely
+distributed. There are also potentially five outliers and most of them
+belong to `Forward' which have special heights(quite not same with the
+mean), as shown by these points far away from the ``whiskers'' of the
+boxplots.
+
+\hypertarget{sec:FDA}{%
+\section{Formal Data Analysis}\label{sec:FDA}}
+
+To begin to analyse the heights of players data formally, we fit the
+following linear model to the data.
+
+\begin{table}[!h]
+
+\caption{\label{tab:modeltable}\label{tab:reg} Estimates of the parameters from the fitted linear regression model.}
+\centering
+\begin{tabular}[t]{l|r}
+\hline
+term & estimate\\
+\hline
+intercept & 182.697\\
+\hline
+positionForward & -1.447\\
+\hline
+\end{tabular}
+\end{table}
+
+Hence the model estimates the average height of players in `Back' is
+182.697 cms (which agrees with the sample mean reported and that the
+`Forward' players' heights are, on average, 1.447 smaller than the
+`Back' players' heights.).
+
+Before we can proceed to use the fitted model(for example to perform
+statistical inference) we must check the assumptions of the model. These
+are best considered in light of the residual plots in Figure 2.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{xxx_files/figure-latex/doubleplots-1} 
+
+}
+
+\caption{\label{fig:resids} Scatterplots of the residuals by Position(left) and a histogram of the residuals (right)}\label{fig:doubleplots}
+\end{figure}
+
+The scatterplots show an approximately even spread of the residuals
+above and below the zero line for each position, therefore the
+assumption that the residuals have mean zero seems valid and the
+assumption that constant variance within the two positions seems
+available too in terms of the first scatterplot. The histogram shows the
+distribution of residuals are nomally distributed errors in the model,
+which the exception of a potential outliers.
+
+\[\widehat{\mbox{Height_cm}} = \widehat{\alpha} + \widehat{\beta}_{\mbox{F}} \cdot \mathbb{I}_{\mbox{F}}(x)\]
+Where \(\widehat{\mbox{Height_cm}}\) is the expected value of the heart
+weight of the \(i\)th cat in the sample; the intercept
+\(\widehat{\alpha}\) is the mean heart weight for the baseline category
+of females; \(\widehat{\beta}_{F}\) is the difference in the mean heart
+weight of a males relatively to the baseline category females;
+\(\mathbb{I}_{F}(i)\) is an indicator function such that
+\[\mathbb{I}_{\mbox{F}}(i)=\left\{
+  \begin{array}{ll}
+  1 ~~~ \mbox{if position of} ~ i \mbox{th observation is Forward},\\
+  0 ~~~ \mbox{Otherwise}.\\
+  \end{array}
+  \right.\] When this model is fitted to the data, the following
+estimates of \(\alpha\)(intercept) and \(\beta_{Forw}(PosF)\) are
+returned:
+
+\hypertarget{sec:Conc}{%
+\section{Conclusions}\label{sec:Conc}}
+
+In summary, we have estimated that, on averagem the male cats have
+hearts which weigh 2.121 grams more than the female cats' hearts. In
+particular, we estimate the average heart weight of female cats is 9.202
+grams and the average heart weight of male cats is 11.3 grams.
+
+In addition to the centers of the distributions of male and female cats'
+heart weights being different, we have also observed that the spread of
+the male heart weights is greater than the spread of the female cats'
+heart weights. This may pose a problem if the standard linear model was
+used to further analyse this data, and therefore it is recommended that
+models which allow for differences in the variances with in different
+groups be used.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\newpage
+
+\hypertarget{further-task}{%
+\section{FURTHER TASK}\label{further-task}}
+
+\end{document}

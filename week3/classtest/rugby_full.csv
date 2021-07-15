@@ -1,0 +1,644 @@
+player_id,team,position,caps,age,age_debut,height_cm,weight_kg,years_playing
+1,Australia,Forward,102,32,22,186,112,11
+2,Japan,Back,26,28,25,183,97,4
+3,South Africa,Forward,8,23,21,200,115,3
+4,Japan,Back,43,25,21,181,94,5
+5,New Zealand,Back,36,24,21,187,91,4
+6,Argentina,Back,52,27,22,171,81,6
+7,New Zealand,Back,48,29,23,186,94,7
+8,Scotland,Forward,32,25,21,196,114,5
+9,Samoa,Forward,24,32,28,178,114,5
+10,Japan,Forward,96,37,26,192,106,12
+11,Tonga,Back,23,29,24,190,89,6
+12,Wales,Forward,62,32,21,206,125,12
+13,Tonga,Back,14,23,21,187,97,3
+14,England,Back,10,22,20,180,89,3
+15,Fiji,Forward,4,27,26,180,130,2
+16,New Zealand,Forward,4,24,24,183,106,1
+17,Japan,Back,17,23,20,175,83,4
+18,New Zealand,Back,21,28,23,183,90,6
+19,USA,Forward,13,25,24,193,97,2
+20,USA,Back,29,27,23,192,92,5
+21,USA,Back,57,31,23,180,86,9
+22,Namibia,Back,4,20,20,175,82,1
+23,Samoa,Back,18,27,24,178,82,4
+24,Canada,Forward,23,29,23,180,106,7
+25,Namibia,Back,15,29,25,188,91,5
+26,Canada,Back,19,25,20,185,82,6
+27,Fiji,Forward,3,25,24,184,115,2
+28,Uruguay,Forward,41,25,19,181,97,7
+29,Samoa,Forward,33,33,25,198,113,9
+30,Italy,Forward,27,31,20,198,110,12
+31,New Zealand,Forward,148,34,20,187,105,15
+32,Fiji,Back,37,29,22,179,85,8
+33,Fiji,Forward,12,28,24,200,120,5
+34,Georgia,Back,20,22,19,165,73,4
+35,Ireland,Back,10,30,29,188,95,2
+36,Australia,Back,114,31,21,182,98,11
+37,Scotland,Forward,12,25,22,202,120,4
+38,France,Back,39,27,23,182,93,5
+39,New Zealand,Forward,22,29,26,199,113,4
+40,France,Back,8,25,24,190,97,2
+41,Wales,Forward,34,28,24,184,108,5
+42,Scotland,Back,20,27,24,188,98,4
+43,Romania,Back,22,25,21,187,93,5
+44,Samoa,Forward,34,31,23,198,119,9
+45,Scotland,Forward,52,32,24,185,111,9
+46,South Africa,Forward,19,22,21,205,125,2
+47,New Zealand,Forward,132,36,23,181,109,14
+48,Argentina,Back,39,31,23,186,92,9
+49,Scotland,Forward,47,32,23,191,109,10
+50,France,Back,66,27,19,180,83,9
+51,Namibia,Forward,11,28,27,173,100,2
+52,Tonga,Forward,33,36,27,190,109,10
+53,Canada,Forward,26,35,32,180,103,4
+54,England,Forward,42,26,20,201,115,7
+55,France,Forward,65,35,23,195,118,13
+56,Ireland,Forward,6,25,20,191,111,6
+57,England,Forward,15,25,24,186,122,2
+58,England,Forward,10,25,24,198,112,2
+59,Georgia,Forward,40,24,19,200,125,6
+60,Romania,Back,30,26,19,188,95,8
+61,Samoa,Forward,27,35,22,191,112,14
+62,Tonga,Forward,17,25,20,196,102,6
+63,Scotland,Back,15,26,24,183,92,3
+64,Australia,Back,27,26,24,182,89,3
+65,Japan,Forward,7,25,24,189,112,2
+66,Japan,Forward,63,34,25,196,108,10
+67,Canada,Back,8,26,21,175,89,6
+68,Uruguay,Back,27,24,20,176,86,5
+69,South Africa,Forward,86,32,20,193,110,13
+70,Japan,Forward,36,34,30,191,100,5
+71,Uruguay,Forward,54,30,19,173,110,12
+72,New Zealand,Back,103,33,21,182,108,13
+73,Georgia,Back,88,31,18,177,80,14
+74,South Africa,Forward,23,26,24,178,120,3
+75,Uruguay,Forward,50,34,28,179,105,7
+76,England,Back,27,32,24,176,86,9
+77,Namibia,Back,22,24,21,183,91,4
+78,South Africa,Forward,70,33,25,187,123,9
+79,Namibia,Back,10,24,23,187,92,2
+80,Tonga,Back,30,31,25,186,85,7
+81,Tonga,Back,17,30,27,180,105,4
+82,Italy,Back,2,22,22,176,83,1
+83,South Africa,Forward,12,24,22,190,123,3
+84,Italy,Forward,11,27,26,189,117,2
+85,Namibia,Forward,49,31,22,184,127,10
+86,Canada,Forward,18,25,22,196,113,4
+87,Romania,Back,4,30,30,173,87,1
+88,USA,Forward,15,30,25,198,122,6
+89,Italy,Back,5,22,21,182,97,2
+90,Scotland,Back,8,22,21,175,87,2
+91,Australia,Forward,57,33,24,194,115,10
+92,South Africa,Back,76,33,22,183,88,12
+93,Ireland,Forward,13,29,26,175,101,4
+94,Samoa,Forward,14,25,22,181,106,4
+95,Argentina,Back,8,24,23,184,85,2
+96,Fiji,Forward,32,33,27,178,102,7
+97,Fiji,Back,7,26,24,178,98,3
+98,South Africa,Forward,127,38,24,201,110,15
+99,Australia,Back,60,26,20,184,92,7
+100,Argentina,Forward,19,25,22,193,104,4
+101,Australia,Forward,16,24,22,187,115,3
+102,Japan,Back,51,28,23,166,72,6
+103,South Africa,Back,34,26,24,186,90,3
+104,Japan,Back,57,29,18,185,99,12
+105,New Zealand,Forward,78,27,21,185,118,7
+106,USA,Forward,12,28,25,187,102,4
+107,USA,Back,17,30,28,180,92,3
+108,Australia,Forward,14,23,22,203,140,2
+109,Namibia,Back,46,29,20,177,87,10
+110,USA,Forward,32,37,29,183,118,9
+111,Ireland,Forward,25,26,24,185,118,3
+112,Ireland,Forward,56,28,22,185,112,7
+113,Scotland,Forward,11,29,25,185,111,5
+114,Georgia,Forward,36,26,19,192,104,8
+115,Uruguay,Forward,27,26,21,175,95,6
+116,France,Back,8,26,25,189,98,2
+117,Ireland,Forward,48,29,23,180,101,7
+118,England,Back,53,28,21,175,85,8
+119,Australia,Forward,63,29,22,188,118,8
+120,Wales,Back,26,24,21,188,87,4
+121,Ireland,Back,67,29,21,185,95,9
+122,France,Forward,12,25,23,184,109,3
+123,Ireland,Forward,41,28,22,188,108,7
+124,Namibia,Back,12,24,22,184,94,3
+125,Canada,Forward,8,31,30,187,105,2
+126,Romania,Forward,25,29,26,184,118,4
+127,Uruguay,Forward,14,23,22,192,112,2
+128,Fiji,Back,19,24,21,186,88,4
+129,Namibia,Forward,8,31,27,185,125,5
+130,England,Forward,28,28,25,175,102,4
+131,South Africa,Forward,43,30,25,190,114,6
+132,Tonga,Forward,18,33,23,194,115,11
+133,Argentina,Forward,22,26,21,188,121,6
+134,Georgia,Forward,15,23,20,195,108,4
+135,Argentina,Forward,25,29,24,203,115,6
+136,Samoa,Back,8,23,22,168,65,2
+137,New Zealand,Back,33,30,25,191,108,6
+138,Fiji,Back,13,25,22,195,97,4
+139,Scotland,Back,22,27,25,183,95,3
+140,Wales,Back,74,29,21,193,110,9
+141,South Africa,Back,60,31,25,186,91,7
+142,England,Forward,21,23,21,188,126,3
+143,Samoa,Back,10,26,23,180,89,4
+144,Italy,Forward,61,34,28,203,118,7
+145,Fiji,Back,17,29,27,186,93,3
+146,Argentina,Back,18,21,19,176,79,3
+147,Wales,Back,3,20,20,186,103,1
+148,England,Back,16,24,21,183,93,4
+149,New Zealand,Forward,118,34,21,184,120,14
+150,Argentina,Forward,27,22,19,200,118,4
+151,Argentina,Back,19,24,23,183,93,2
+152,Australia,Forward,23,26,23,202,123,4
+153,France,Back,24,31,29,186,93,3
+154,Canada,Forward,22,24,21,194,110,4
+155,Georgia,Forward,2,23,23,177,113,1
+156,Samoa,Forward,10,29,27,194,100,3
+157,Georgia,Forward,16,28,21,184,112,8
+158,New Zealand,Forward,84,30,23,193,110,8
+159,Scotland,Forward,8,29,29,182,120,1
+160,France,Forward,36,29,21,192,109,9
+161,Scotland,Back,33,25,21,186,101,5
+162,Scotland,Back,38,23,19,180,93,5
+163,England,Back,2,22,22,190,90,1
+164,Ireland,Forward,35,26,22,191,107,5
+165,Namibia,Forward,11,21,19,193,100,3
+166,Uruguay,Forward,15,21,19,193,87,3
+167,Namibia,Forward,15,34,32,185,122,3
+168,Italy,Back,21,22,20,184,87,3
+169,Romania,Back,1,24,24,175,80,1
+170,Ireland,Back,68,35,25,178,83,11
+171,Wales,Back,39,26,19,185,94,8
+172,Fiji,Forward,6,22,22,183,104,1
+173,Samoa,Back,6,29,28,181,90,2
+174,Tonga,Forward,28,33,29,190,109,5
+175,England,Forward,56,28,22,189,118,7
+176,Wales,Forward,38,26,22,186,101,5
+177,Japan,Back,15,30,28,181,90,3
+178,Canada,Back,32,27,20,183,93,8
+179,Argentina,Forward,16,22,21,183,110,2
+180,Tonga,Back,14,24,23,180,95,2
+181,Canada,Forward,37,31,23,178,100,9
+182,Georgia,Forward,32,25,21,186,118,5
+183,France,Forward,46,31,20,188,103,12
+184,Italy,Forward,29,29,26,183,117,4
+185,Ireland,Back,67,31,20,190,96,12
+186,Scotland,Forward,51,26,20,207,126,7
+187,Wales,Back,40,28,23,182,90,6
+188,Uruguay,Forward,18,23,21,185,105,3
+189,England,Back,19,25,23,189,90,3
+190,Fiji,Back,13,26,22,184,94,5
+191,USA,Forward,7,28,28,183,118,1
+192,USA,Forward,11,24,23,204,123,2
+193,England,Forward,3,25,25,183,109,1
+194,Canada,Back,15,27,26,178,80,2
+195,Canada,Forward,7,24,24,197,115,1
+196,Japan,Back,14,30,29,178,98,2
+197,Argentina,Forward,13,22,21,188,103,2
+198,England,Back,26,29,25,185,95,5
+199,Wales,Back,3,24,24,184,90,1
+200,Italy,Back,95,34,18,183,99,17
+201,New Zealand,Forward,33,28,25,184,128,4
+202,England,Forward,42,29,24,193,108,6
+203,Romania,Forward,9,26,24,184,111,3
+204,Wales,Forward,3,30,30,196,116,1
+205,Italy,Back,18,22,20,184,91,3
+206,Japan,Back,11,35,33,180,90,3
+207,Uruguay,Back,44,27,20,181,98,8
+208,Namibia,Forward,47,31,22,195,104,10
+209,Japan,Forward,10,25,24,183,115,2
+210,Italy,Back,75,28,21,190,98,8
+211,Italy,Forward,23,28,25,193,107,4
+212,USA,Back,23,24,22,178,91,3
+213,France,Forward,39,29,21,191,100,9
+214,England,Back,19,27,24,180,91,4
+215,Uruguay,Back,41,26,21,181,80,6
+216,Argentina,Back,45,26,21,175,79,6
+217,South Africa,Forward,38,31,26,192,120,6
+218,Ireland,Forward,108,36,22,198,112,15
+219,Romania,Forward,51,28,20,196,117,9
+220,Romania,Forward,53,32,23,189,107,10
+221,Georgia,Forward,40,28,20,183,122,9
+222,Argentina,Forward,24,27,22,190,115,6
+223,England,Back,17,22,20,175,80,3
+224,Samoa,Forward,9,28,26,180,106,3
+225,USA,Forward,5,29,28,190,100,2
+226,Tonga,Back,8,24,24,190,103,1
+227,Namibia,Back,15,26,20,187,97,7
+228,Namibia,Back,7,25,25,180,88,1
+229,Canada,Back,31,30,24,170,77,7
+230,Romania,Forward,72,35,19,195,109,17
+231,Samoa,Forward,19,28,26,183,101,3
+232,USA,Back,16,27,25,180,86,3
+233,Australia,Forward,44,31,24,196,109,8
+234,Samoa,Forward,52,34,24,190,135,11
+235,Scotland,Forward,5,27,27,183,102,1
+236,Romania,Forward,51,29,21,186,118,9
+237,New Zealand,Back,17,23,22,183,94,2
+238,Japan,Forward,26,29,26,196,111,4
+239,Namibia,Forward,7,23,23,178,128,1
+240,Japan,Forward,32,27,24,178,115,4
+241,Scotland,Back,24,28,22,195,102,7
+242,France,Forward,83,32,21,181,101,12
+243,Georgia,Back,23,26,19,180,87,8
+244,France,Back,11,29,28,180,89,2
+245,Uruguay,Forward,31,27,24,186,108,4
+246,Uruguay,Forward,25,24,21,188,100,4
+247,USA,Back,8,25,25,183,87,1
+248,Namibia,Forward,10,26,25,190,113,2
+249,Argentina,Back,48,30,22,185,93,9
+250,Tonga,Forward,25,34,30,203,120,5
+251,Wales,Forward,16,29,26,183,116,4
+252,Uruguay,Forward,26,28,24,188,96,5
+253,Japan,Back,28,34,25,173,82,10
+254,Tonga,Forward,8,29,23,198,120,7
+255,Argentina,Forward,20,32,25,190,119,8
+256,Italy,Forward,16,25,23,183,103,3
+257,Georgia,Forward,33,29,21,180,108,9
+258,New Zealand,Forward,11,27,26,188,112,2
+259,Australia,Forward,61,30,20,181,114,11
+260,USA,Back,54,32,24,183,93,9
+261,USA,Back,13,27,19,193,104,9
+262,France,Back,39,27,20,183,125,8
+263,South Africa,Forward,54,30,23,184,112,8
+264,New Zealand,Back,13,23,22,187,99,2
+265,Tonga,Back,3,23,23,180,105,1
+266,Namibia,Back,29,29,25,175,86,5
+267,USA,Forward,17,25,22,187,102,4
+268,England,Forward,44,30,24,188,122,7
+269,France,Back,14,29,28,186,100,2
+270,Japan,Forward,72,30,23,178,115,8
+271,Australia,Back,5,27,26,186,97,2
+272,Georgia,Back,35,22,19,194,108,4
+273,Georgia,Back,50,28,20,183,92,9
+274,Ireland,Forward,23,23,20,198,114,4
+275,Georgia,Back,9,21,20,182,85,2
+276,France,Forward,80,34,25,188,103,10
+277,Wales,Forward,15,27,25,190,115,3
+278,Canada,Back,22,25,21,188,95,5
+279,Namibia,Forward,5,22,22,186,100,1
+280,Canada,Back,49,29,22,190,100,8
+281,England,Back,5,26,26,193,116,1
+282,New Zealand,Forward,45,32,26,193,116,7
+283,Ireland,Forward,14,24,22,188,108,3
+284,France,Forward,38,29,21,180,109,9
+285,Tonga,Back,1,24,24,179,97,1
+286,Australia,Back,31,24,22,192,102,3
+287,South Africa,Back,31,31,25,184,92,7
+288,Ireland,Forward,31,29,24,208,124,6
+289,Argentina,Forward,34,31,27,191,106,5
+290,France,Forward,85,35,23,180,108,13
+291,Japan,Forward,44,34,26,188,112,9
+292,Australia,Forward,51,24,21,182,101,4
+293,South Africa,Forward,10,34,27,182,100,8
+294,South Africa,Back,117,32,21,179,94,12
+295,Australia,Forward,6,21,20,186,100,2
+296,Samoa,Forward,28,33,28,182,118,6
+297,France,Back,77,33,19,180,87,15
+298,Samoa,Back,37,34,21,194,111,14
+299,Namibia,Back,10,26,21,193,103,6
+300,Georgia,Forward,75,32,20,196,114,13
+301,Scotland,Back,21,24,20,176,90,5
+302,Wales,Back,94,33,21,191,102,13
+303,Argentina,Back,39,27,22,177,83,6
+304,South Africa,Back,109,34,21,190,100,14
+305,New Zealand,Back,112,33,21,178,96,13
+306,Australia,Forward,47,27,22,192,106,6
+307,Uruguay,Back,37,28,24,180,96,5
+308,Canada,Forward,42,29,22,193,111,8
+309,New Zealand,Forward,36,28,25,184,110,4
+310,New Zealand,Forward,31,23,20,189,105,4
+311,Canada,Back,11,24,22,189,91,3
+312,Ireland,Forward,56,35,29,188,127,7
+313,South Africa,Forward,23,26,23,187,126,4
+314,Fiji,Forward,9,30,29,196,117,2
+315,Japan,Back,29,22,18,184,90,5
+316,Georgia,Back,40,29,25,178,81,5
+317,Samoa,Back,28,33,28,184,94,6
+318,Australia,Back,29,26,21,186,93,6
+319,Wales,Back,9,25,24,178,90,2
+320,Australia,Forward,24,32,22,187,114,11
+321,Italy,Back,39,31,24,185,96,8
+322,England,Forward,37,25,22,183,113,4
+323,Fiji,Forward,9,31,30,175,115,2
+324,Fiji,Back,28,26,21,179,85,6
+325,Wales,Back,81,30,21,183,95,10
+326,Romania,Back,54,30,23,170,81,8
+327,England,Forward,62,30,21,193,114,10
+328,Tonga,Forward,6,25,24,185,122,2
+329,Canada,Back,39,29,20,185,101,10
+330,Georgia,Forward,24,24,21,180,103,4
+331,Uruguay,Back,43,27,20,178,85,8
+332,Canada,Forward,9,23,21,180,125,3
+333,Romania,Forward,5,28,28,196,118,1
+334,Scotland,Forward,3,27,26,178,92,2
+335,Wales,Forward,65,33,21,186,116,13
+336,Romania,Back,74,34,21,187,95,14
+337,Scotland,Forward,15,29,28,188,108,2
+338,Wales,Back,5,21,19,180,98,3
+339,Georgia,Back,40,22,18,185,96,5
+340,Georgia,Back,87,30,20,184,96,11
+341,Namibia,Back,28,29,23,183,97,7
+342,South Africa,Back,2,26,26,167,70,1
+343,Australia,Forward,55,27,20,187,115,8
+344,Scotland,Forward,15,26,23,191,105,4
+345,Romania,Forward,54,30,22,191,106,9
+346,Georgia,Back,5,21,21,192,95,1
+347,Uruguay,Back,24,35,23,178,91,13
+348,Fiji,Forward,22,33,24,188,106,10
+349,Samoa,Forward,35,31,25,185,108,7
+350,Canada,Back,20,26,23,185,90,4
+351,Namibia,Forward,26,30,25,182,98,6
+352,Scotland,Forward,15,28,27,188,120,2
+353,Wales,Back,24,25,21,183,89,5
+354,Ireland,Forward,3,23,23,185,119,1
+355,England,Forward,31,26,22,190,116,5
+356,USA,Back,6,25,24,193,91,2
+357,Fiji,Forward,46,35,25,178,110,11
+358,Wales,Forward,52,25,21,189,113,5
+359,New Zealand,Forward,43,31,24,190,109,8
+360,Wales,Forward,51,27,21,193,115,7
+361,Uruguay,Back,11,21,20,173,77,2
+362,Romania,Back,31,27,20,180,80,8
+363,Namibia,Forward,40,31,22,192,113,10
+364,South Africa,Back,88,31,22,186,92,10
+365,Romania,Forward,46,29,23,190,103,7
+366,Italy,Back,34,24,19,187,100,6
+367,USA,Forward,56,30,20,192,110,11
+368,Italy,Forward,22,33,23,188,110,11
+369,Samoa,Forward,7,28,28,180,112,1
+370,Samoa,Forward,8,26,25,187,96,2
+371,Argentina,Forward,20,26,25,191,130,2
+372,England,Forward,16,29,25,183,110,5
+373,England,Forward,29,32,28,198,114,5
+374,South Africa,Back,13,24,23,189,109,2
+375,South Africa,Forward,35,29,26,193,108,4
+376,Canada,Forward,23,28,22,187,103,7
+377,New Zealand,Forward,73,27,22,202,116,6
+378,Japan,Forward,33,31,26,196,105,6
+379,Romania,Forward,63,29,18,194,112,12
+380,Argentina,Back,4,27,27,174,98,1
+381,Fiji,Forward,33,32,23,190,110,10
+382,USA,Back,6,26,26,190,88,1
+383,Fiji,Back,22,30,22,176,97,9
+384,Canada,Forward,71,32,22,183,107,11
+385,England,Forward,43,29,23,188,110,7
+386,Romania,Back,88,30,20,184,97,11
+387,South Africa,Forward,79,31,23,190,115,9
+388,Georgia,Back,14,21,20,178,89,2
+389,Japan,Forward,49,29,22,183,122,8
+390,New Zealand,Forward,33,28,23,192,109,6
+391,France,Back,41,28,23,187,96,6
+392,USA,Forward,36,28,24,193,116,5
+393,Italy,Forward,13,27,26,180,109,2
+394,Namibia,Forward,14,24,23,200,108,2
+395,Japan,Forward,22,31,25,173,102,7
+396,Canada,Back,23,27,20,183,88,8
+397,Fiji,Back,9,24,24,191,89,1
+398,Tonga,Forward,38,37,20,185,108,18
+399,Canada,Forward,39,37,24,198,116,14
+400,Fiji,Back,23,27,22,194,125,6
+401,Ireland,Back,21,25,22,188,94,4
+402,Georgia,Back,62,29,21,185,92,9
+403,Fiji,Forward,39,30,25,182,114,6
+404,Tonga,Forward,5,28,28,189,105,1
+405,Uruguay,Back,18,23,20,175,75,4
+406,Italy,Forward,40,34,24,184,106,11
+407,Samoa,Back,5,26,26,178,88,1
+408,Fiji,Forward,51,31,21,193,102,11
+409,Italy,Back,7,23,23,185,90,1
+410,USA,Forward,1,23,23,183,114,1
+411,France,Back,5,26,24,184,94,3
+412,Uruguay,Back,18,24,20,178,80,5
+413,Argentina,Forward,46,30,19,182,106,12
+414,Tonga,Back,42,32,23,187,95,10
+415,Canada,Forward,10,28,26,183,102,3
+416,Georgia,Forward,32,28,21,180,102,8
+417,Ireland,Back,34,28,19,185,91,10
+418,USA,Forward,9,26,26,193,114,1
+419,Tonga,Forward,20,34,30,185,112,5
+420,USA,Back,35,30,22,178,84,9
+421,New Zealand,Back,94,34,23,186,95,12
+422,Ireland,Back,46,28,21,178,92,8
+423,Tonga,Forward,28,35,21,193,118,15
+424,Uruguay,Forward,14,24,22,174,85,3
+425,Italy,Back,15,24,23,173,83,2
+426,Ireland,Back,13,23,20,180,80,4
+427,Italy,Forward,27,27,21,183,100,7
+428,Georgia,Forward,53,32,21,179,117,12
+429,Argentina,Forward,65,32,21,186,113,12
+430,Georgia,Forward,27,24,20,188,125,5
+431,Tonga,Forward,17,32,28,190,120,5
+432,Wales,Forward,4,21,21,188,103,1
+433,New Zealand,Back,47,27,24,171,82,4
+434,Romania,Back,84,29,19,184,87,11
+435,Scotland,Back,13,22,21,183,89,2
+436,Namibia,Back,37,27,20,185,91,8
+437,Fiji,Forward,36,32,27,190,107,6
+438,Italy,Forward,115,34,21,188,117,14
+439,Romania,Forward,18,29,25,180,105,5
+440,Australia,Back,102,33,20,178,84,14
+441,Wales,Forward,60,27,21,188,103,7
+442,South Africa,Forward,13,24,22,186,99,3
+443,Uruguay,Forward,26,29,25,191,105,5
+444,Italy,Forward,6,24,21,198,124,4
+445,France,Forward,37,31,24,183,108,8
+446,Romania,Back,1,20,19,187,80,2
+447,Japan,Forward,42,29,23,180,105,7
+448,Australia,Back,31,25,23,182,90,3
+449,South Africa,Back,15,29,24,181,93,6
+450,Argentina,Forward,7,23,20,185,105,4
+451,Italy,Forward,80,30,21,184,103,10
+452,France,Back,19,30,23,176,87,8
+453,Samoa,Forward,4,31,30,170,110,2
+454,France,Back,1,26,26,188,103,1
+455,Australia,Forward,60,26,21,200,115,6
+456,Scotland,Back,17,26,23,178,80,4
+457,Ireland,Back,25,26,23,180,90,4
+458,Argentina,Forward,71,34,22,191,106,13
+459,Japan,Forward,41,27,21,183,114,7
+460,France,Forward,10,25,24,197,145,2
+461,Scotland,Forward,5,29,29,193,114,1
+462,Ireland,Forward,80,31,22,193,110,10
+463,Namibia,Back,26,28,21,175,93,8
+464,France,Forward,42,27,23,201,119,5
+465,Wales,Forward,94,30,21,196,125,10
+466,South Africa,Back,66,29,20,191,102,10
+467,Japan,Forward,34,28,22,192,118,7
+468,Italy,Forward,114,32,19,196,112,14
+469,Canada,Back,29,28,21,185,96,8
+470,Canada,Forward,38,27,21,183,115,7
+471,Fiji,Back,16,25,19,184,93,7
+472,Fiji,Forward,18,29,26,198,114,4
+473,Wales,Back,5,23,22,173,77,2
+474,Ireland,Back,11,28,22,183,93,7
+475,Scotland,Back,101,34,23,188,105,12
+476,Samoa,Back,20,31,27,183,93,5
+477,France,Forward,21,26,24,178,112,3
+478,Uruguay,Back,35,27,20,183,85,8
+479,Tonga,Forward,43,33,24,180,101,10
+480,Wales,Back,1,23,23,184,91,1
+481,Namibia,Forward,6,20,18,178,93,3
+482,Romania,Back,77,30,19,182,82,12
+483,Uruguay,Forward,48,33,23,178,98,11
+484,Scotland,Forward,15,26,24,183,103,3
+485,South Africa,Forward,75,30,23,183,116,8
+486,England,Back,43,30,22,183,92,9
+487,Japan,Forward,36,27,24,189,107,4
+488,New Zealand,Forward,47,31,26,183,117,6
+489,Scotland,Back,23,28,25,196,109,4
+490,Uruguay,Forward,51,26,19,188,105,8
+491,Australia,Forward,12,26,25,200,116,2
+492,England,Forward,54,37,28,192,114,10
+493,New Zealand,Forward,47,24,21,204,120,4
+494,Namibia,Forward,3,21,21,185,105,1
+495,Samoa,Back,8,25,24,183,88,2
+496,Canada,Forward,12,21,19,185,118,3
+497,Uruguay,Back,35,24,21,171,79,4
+498,Wales,Forward,49,28,21,198,122,8
+499,Uruguay,Forward,37,31,24,187,106,8
+500,USA,Back,38,33,26,189,105,8
+501,Italy,Forward,106,36,19,185,104,18
+502,Samoa,Forward,7,27,27,190,108,1
+503,Scotland,Forward,19,21,19,198,119,3
+504,Fiji,Forward,31,31,26,180,107,6
+505,Romania,Back,5,29,29,185,105,1
+506,Romania,Forward,10,23,22,198,112,2
+507,England,Back,52,26,20,178,87,7
+508,England,Forward,28,24,21,198,115,4
+509,France,Back,24,25,22,176,82,4
+510,Samoa,Back,25,33,29,183,93,5
+511,Romania,Forward,67,29,20,194,108,10
+512,New Zealand,Back,3,24,24,186,102,1
+513,Australia,Back,66,27,21,174,82,7
+514,Canada,Back,28,27,21,187,98,7
+515,Fiji,Back,24,28,21,188,100,8
+516,Tonga,Forward,29,27,18,194,117,10
+517,Georgia,Back,10,19,18,175,75,2
+518,Canada,Back,62,36,24,175,85,13
+519,Fiji,Forward,35,27,21,198,117,7
+520,South Africa,Forward,44,24,21,203,117,4
+521,Uruguay,Back,32,24,22,181,93,3
+522,Fiji,Forward,13,25,23,185,105,3
+523,South Africa,Back,50,25,20,177,89,6
+524,Australia,Forward,74,26,21,186,117,6
+525,Wales,Back,55,23,18,192,107,6
+526,Italy,Forward,35,26,22,200,108,5
+527,Argentina,Forward,12,21,20,193,104,2
+528,Romania,Forward,50,28,20,181,103,9
+529,Canada,Forward,14,27,25,185,85,3
+530,Argentina,Forward,23,22,21,179,107,2
+531,USA,Forward,20,25,23,198,107,3
+532,Georgia,Forward,16,28,20,182,118,9
+533,USA,Forward,36,31,25,180,111,7
+534,Tonga,Forward,5,33,31,197,118,3
+535,France,Forward,18,26,24,204,120,3
+536,Georgia,Forward,35,25,21,180,106,5
+537,South Africa,Back,26,22,20,187,97,3
+538,Ireland,Back,42,26,22,188,94,5
+539,New Zealand,Back,8,24,24,182,90,1
+540,Namibia,Forward,36,32,21,188,102,12
+541,Tonga,Forward,23,27,23,183,94,5
+542,Canada,Forward,39,33,24,191,120,10
+543,Wales,Forward,17,22,20,192,107,3
+544,Georgia,Forward,54,31,21,194,111,11
+545,Namibia,Back,13,25,23,175,88,3
+546,USA,Forward,16,20,18,183,113,3
+547,Japan,Back,53,30,22,166,71,9
+548,Uruguay,Forward,13,21,20,184,105,2
+549,USA,Forward,29,30,23,200,116,8
+550,USA,Forward,15,29,27,180,118,3
+551,Samoa,Back,19,29,24,188,103,6
+552,USA,Forward,17,26,23,188,117,4
+553,Uruguay,Back,16,24,21,196,95,4
+554,Australia,Back,70,31,21,182,92,11
+555,Samoa,Forward,15,30,21,185,112,10
+556,Ireland,Forward,24,31,26,191,107,6
+557,South Africa,Back,20,21,20,189,98,2
+558,Argentina,Back,19,27,23,178,89,5
+559,New Zealand,Back,20,25,22,187,89,4
+560,Ireland,Back,14,26,24,180,91,3
+561,Wales,Forward,15,24,22,200,122,3
+562,Japan,Back,35,26,22,181,92,5
+563,England,Back,15,21,20,188,90,2
+564,Argentina,Forward,20,23,22,198,112,2
+565,Romania,Forward,74,32,20,183,118,13
+566,Scotland,Back,46,30,25,176,80,6
+567,Romania,Back,85,29,20,186,98,10
+568,Tonga,Forward,18,30,27,180,100,4
+569,Wales,Back,4,22,20,193,99,3
+570,France,Forward,37,34,25,190,125,10
+571,Scotland,Forward,25,30,27,183,111,4
+572,England,Back,35,24,20,188,90,5
+573,Wales,Back,34,25,21,185,100,5
+574,Italy,Forward,24,29,26,180,106,4
+575,Italy,Back,33,25,21,187,110,5
+576,Australia,Back,39,26,22,180,87,5
+577,Ireland,Forward,34,31,24,201,116,8
+578,Japan,Back,16,22,20,175,88,3
+579,Ireland,Forward,89,33,23,180,110,11
+580,Argentina,Back,58,33,20,187,94,14
+581,Fiji,Back,39,31,23,189,99,9
+582,England,Forward,27,24,21,182,118,4
+583,Namibia,Forward,8,27,27,186,120,1
+584,Uruguay,Forward,35,35,21,174,115,15
+585,Scotland,Forward,17,28,26,193,116,3
+586,Georgia,Forward,52,31,21,193,102,11
+587,France,Forward,51,29,21,192,118,9
+588,Canada,Back,7,24,22,185,95,3
+589,Italy,Forward,44,32,24,190,120,9
+590,Australia,Forward,3,27,27,190,116,1
+591,Japan,Forward,47,27,20,190,105,8
+592,Georgia,Back,39,27,20,180,82,8
+593,Samoa,Back,15,29,26,189,101,4
+594,France,Forward,23,26,24,196,113,3
+595,Australia,Forward,10,27,24,183,104,4
+596,New Zealand,Forward,67,32,23,196,110,10
+597,New Zealand,Back,41,25,22,192,106,4
+598,Tonga,Forward,21,32,29,178,112,4
+599,Japan,Back,32,28,19,171,83,10
+600,Tonga,Back,15,28,22,189,85,7
+601,Fiji,Back,10,26,24,174,70,3
+602,Scotland,Back,15,23,22,182,87,2
+603,Tonga,Back,25,30,26,180,95,5
+604,Argentina,Back,63,31,21,181,90,11
+605,Ireland,Back,56,30,24,188,92,7
+606,Australia,Back,58,27,20,186,92,8
+607,Tonga,Back,24,30,26,185,99,5
+608,Uruguay,Forward,51,29,20,187,116,10
+609,Australia,Back,38,26,24,193,103,3
+610,Ireland,Forward,8,34,34,188,122,1
+611,Romania,Forward,28,29,26,188,130,4
+612,Scotland,Forward,94,31,20,186,115,12
+613,Wales,Forward,7,23,23,189,130,1
+614,Italy,Back,47,25,20,180,86,6
+615,Samoa,Forward,22,28,25,198,122,4
+616,Argentina,Back,33,27,22,185,90,6
+617,Ireland,Back,15,22,20,191,100,3
+618,Romania,Forward,26,31,27,180,117,5
+619,Wales,Forward,119,35,22,188,117,14
+620,Australia,Forward,30,31,29,198,114,3
+621,Australia,Back,17,25,22,188,101,4
+622,France,Back,15,21,18,190,99,4
+623,Samoa,Back,7,24,23,179,90,2
+624,Wales,Back,40,25,21,198,103,5
+625,Namibia,Forward,15,27,22,185,112,6
+626,Argentina,Forward,65,32,21,190,104,12
+627,Ireland,Forward,17,33,29,193,115,5
+628,Argentina,Back,28,26,23,184,86,4
+629,Georgia,Forward,86,34,20,195,112,15
+630,Tonga,Back,18,27,22,182,95,6
+631,Fiji,Forward,27,26,23,189,111,4
+632,Italy,Back,23,23,21,192,93,3
+633,Georgia,Forward,65,31,18,196,118,14
+634,USA,Back,2,24,24,175,84,1
+635,Canada,Back,17,24,21,178,96,4
+636,Argentina,Forward,22,22,19,193,99,4
+637,Italy,Forward,94,31,21,188,107,11
+638,Fiji,Forward,27,29,24,189,111,6
+639,Wales,Forward,7,25,23,193,108,3
+640,Italy,Back,1,23,22,184,92,2
+641,South Africa,Back,11,21,21,186,96,1
+642,Romania,Back,18,25,23,195,96,3
+643,Samoa,Forward,40,32,26,183,118,7

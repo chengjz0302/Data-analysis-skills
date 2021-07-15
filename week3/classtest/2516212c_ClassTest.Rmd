@@ -1,0 +1,160 @@
+---
+title: "Analysis of the rugby players"
+author: "Student Number: 2516212c"
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    number_sections: no
+  html_document:
+    df_print: paged
+fig_caption: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE, warning = FALSE, message = FALSE, comment = NA)
+```
+
+```{r libraries}
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+library(gapminder)
+library(skimr)
+library(kableExtra)
+library(gridExtra)
+library(stringr)
+library(tidyr)
+```
+
+
+```{r data, echo = FALSE, eval = TRUE}
+rugby_height <- read.csv("rugby_height.csv")
+```
+
+# Introduction {#sec:Intro}
+In the sport of rugby there are many different positions a player could play but, in general, players are classified into one of two playing positions, namely 'Forward' and 'Back'. From the data collected on rugby players from the 2015
+Men's Rugby World Cup, we want to figure out the relationship between position and heights. 89 rugby players were used in the research and they each had their own position and heights(in cm). This data is analysed in this report.
+
+# Exploratory Data Analysis {#sec:EDA}
+Summary statistics of the heights of the rugby players are presented in the following table for each kind of position separately.
+```{r summarises, echo=FALSE, eval=TRUE,message=FALSE,warning=FALSE}
+rugby_height %>%
+group_by(position) %>%
+summarise(n=n(),Mean=round(mean(height_cm),digits=0), St.Dev=round(sd(height_cm),digits=1),
+Min=min(height_cm), Q1 = quantile(height_cm,0.25), Median=median(height_cm),
+Q3 = quantile(height_cm,0.75), Max=max(height_cm)) %>%
+kable(caption = '\\label{tab:summaries} Summary statistics on
+height(in cm) by position of 89 rugby players.') %>%
+kable_styling(latex_options = "hold_position")
+```
+This table shows that there were almost twice as many rugby players in the sample (56 compared to 33) and that the summarises of the heights of the rugby players which position is 'Back' seem has no remarkable difference with these rugby players who played 'Forward'. But from the median, the summarises of 'Back' was greater than 'Forward' although the difference was not large. For example the maximum of 'Back' was taller than the maximum of 'Forward' 3 cm and from the Standard deviation, we could see that the spread of 'Back' seems widely than the spread of 'Forward'. These differences can be seen directly in the following boxplots which summarise the distribution of the heights of each kind of players.
+
+```{r boxplot1,out.width='68%', fig.align = 'center', fig.cap = '\\label{fig:box} Boxplot:Heights by Position', fig.pos = "H",echo=FALSE,eval=TRUE,message=FALSE,warning=FALSE}
+rugby_height %>% 
+  group_by(position) %>% 
+  ggplot(aes(x = position, y = height_cm))+
+  geom_boxplot(fill="skyblue")+
+  labs(x = "Position",y = "Heights (in cm)",
+       title = "Heights of 89 rugby players")
+```
+The boxplot shows that the rugby players' heights  of 'Back' is larger than 'Forward', in general, compared to the players' heights of 'Forward' and that the players' heights of 'Back' were more widely distributed. There are also potentially five outliers and most of them belong to 'Forward' which have special heights(quite not same with the mean), as shown by these points far away from the "whiskers" of the boxplots. 
+
+# Formal Data Analysis {#sec:FDA}
+To begin to analyse the heights of players data formally, we fit the following linear model to the data.
+$$\widehat{\mbox{H}} = \widehat{\alpha} + \widehat{\beta}_{\mbox{f}} \cdot \mathbb{I}_{\mbox{f}}(x)$$
+Where
+
+  *$\widehat{\mbox{H}}$ is the expected value of the height of the $i$th player in the sample;
+  
+  *the intercept $\widehat{\alpha}$ is the mean height for the baseline category of 'Back';
+  
+  *$\widehat{\beta}_{f}$ is the difference in the mean height of a 'Forward' player relatively to the baseline category 'Back';
+  
+  *$\mathbb{I}_{f}(i)$ is an indicator function such that
+  $$\mathbb{I}_{\mbox{f}}(i)=\left\{
+\begin{array}{ll}
+1 ~~~ \mbox{if position of} ~ i \mbox{th observation is forward},\\
+0 ~~~ \mbox{Otherwise}.\\
+\end{array}
+\right.$$
+
+When this model is fitted to the data, the following estimates of $\alpha$(intercept) and $\beta_{f}(Posf)$ are returned:
+
+```{r model, echo=FALSE, eval=TRUE,message=FALSE,warning=FALSE}
+model <- lm(height_cm~position,rugby_height)
+```
+```{r modeltable, echo = FALSE,message=FALSE,warning=FALSE}
+get_regression_table(model) %>% 
+  dplyr::select(term,estimate) %>% 
+  kable(caption = "\\label{tab:reg} Estimates of the parameters from the fitted linear regression model.") %>% 
+  kable_styling(latex_options = "hold_position")
+```
+Hence the model estimates the average height of players in 'Back' is 182.697 cms (which agrees with the sample mean reported and that the 'Forward' players' heights are, on average, 1.447 lower than the 'Back' players' heights.).
+
+Before we can proceed to use the fitted model(for example to perform statistical inference) we must check the assumptions of the model. These are best considered in light of the residual plots in Figure 2.
+```{r doubleplots, echo=FALSE,fig.width = 13, fig.align = "center", fig.cap = "\\label{fig:resids} Scatterplots of the residuals by Position(left) and a histogram of the residuals (right)", fig.pos="H",eval=TRUE,message=FALSE,warning=FALSE}
+regression.points <- get_regression_points(model)
+p1 <- ggplot(regression.points, aes(x = position, y = residual)) +
+  geom_jitter(width = 0.1) +
+  labs(x = "Position", y = "Residual") +
+  geom_hline(yintercept = 0, col = "blue")
+
+p2 <- ggplot(regression.points,aes(x = residual)) +
+geom_histogram(color = "white") +
+  labs(x = "Residual")
+
+grid.arrange(p1,p2,ncol=2)
+  
+```
+The scatterplots show an approximately even spread of the residuals above and below the zero line for each position, therefore the assumption that the residuals have mean zero seems valid and the assumption that constant variance within the two positions seems available too in terms of the first scatterplot. The histogram shows the distribution of residuals are nomally distributed errors in the model, which the exception of a potential outliers.
+
+# Conclusions {#sec:Conc}
+In summary, we have estimated that, on average the 'Back' players have heights which is 2 centimeters  taller than the 'Forward' players. In particular, we estimate the average height of 'Back' players is 182.697 centimeters and the average height of 'Forward' players is 181.25 centimeters.
+
+In addition to the centers of the distributions of 'Back' and 'Forward' players being different, we have also observed that the spread of the both position seems familiar and without remarkable difference. So based on the fitted linear model, there is no statistically significant difference in the heights between these two positions.
+
+***
+\newpage
+# FURTHER TASK
+a)
+```{r data2, echo =TRUE, eval = TRUE,warning=FALSE,message=FALSE}
+rugby <- read.csv("rugby_full.csv")
+rugby <- rugby %>% 
+  mutate(games_per_year = round(caps/years_playing,digits = 1))
+```
+
+b)
+```{r,echo=TRUE,eval=TRUE,message=FALSE,warning=FALSE}
+rugby_tidy <- gather(data = rugby,
+key = Type_of_Age, value = Age,
+c(age,age_debut))
+```
+
+c)
+```{r cy,echo=TRUE,fig.width = 13, fig.align = "center", fig.cap = "\\label{fig:cy} Scatterplots of the working years caps", fig.pos="H",eval=TRUE,message=FALSE,warning=FALSE}
+rugby_tidy %>% 
+  group_by(team) %>% 
+  ggplot(aes(x = caps,y = years_playing))+
+  geom_point(mapping = aes(pch = position,color = position))+
+  labs(x = "Captitals", y = "Years for playing", title = 'The relationship between caps and year_playing')+
+  facet_grid(.~team)
+```
+
+d)
+```{r hw,echo=TRUE,fig.width = 13, fig.align = "center", fig.cap = "\\label{fig:hw} Scatterplots of the Weight(kg) by Height(cm)", fig.pos="H",eval=TRUE,message=FALSE,warning=FALSE}
+rugby_tidy %>% 
+  filter(team == c("England","Ireland","Scotland","Wales")) %>% 
+  group_by(position) %>% 
+  ggplot(aes(x = height_cm, y = weight_kg))+
+  geom_point(mapping = aes(color=position,pch = position),size = 3)+
+  geom_smooth(mapping = aes(lty = position,color=position),lwd = 1.5, se = FALSE,method = "lm")
+```
+
+
+
+
+
+
+
+
+
